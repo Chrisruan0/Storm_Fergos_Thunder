@@ -1,0 +1,396 @@
+{
+	"siteVersion": "1.197.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "StormKingsThunder",
+				"abbreviation": "SKT ⚡",
+				"full": "Storm Kings Thunder ⚡",
+				"url": "",
+				"authors": [
+					"Fergos"
+				],
+				"convertedBy": [],
+				"color": "#00178a"
+			}
+		],
+		"dateAdded": 1706619200,
+		"dateLastModified": 1706619200
+	},
+	"monster": [
+		{
+			"source": "StormKingsThunder",
+			"page": 118,
+			"name": "Duke Zalto (GMA) - SKT",
+			"environment": [
+				"badlands",
+				"mountain",
+				"underdark",
+				"volcanic"
+			],
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignmentPrefix": "typically ",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item +2 plate armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "33d12 + 231",
+				"average": 445
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 26,
+			"dex": 9,
+			"con": 24,
+			"int": 10,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+10",
+				"con": "+15",
+				"cha": "+12"
+			},
+			"skill": {
+				"intimidation": "+12",
+				"insight": "+10",
+				"perception": "+10",
+				"athletics": "+16"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"passive": 20,
+			"languages": [
+				"Giant"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"cr": "27",
+			"trait": [
+				{
+					"name": "Aura of Conquest",
+					"entries": [
+						"If the giant isn't {@condition incapacitated}, a creature {@condition frightened} of the giant that starts its turn within 30 feet of the giant takes 10 ({@damage 3d6}) psychic damage and has its speed is reduced to 0."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the zalto fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Special Equipament",
+					"entries": [
+						"Zalto wears a {@item ring of lightning resistance}, Royal Incinerator."
+					]
+				},
+				{
+					"name": "Master of Maul",
+					"entries": [
+						"Once per turn, Duke Zalto can use one of the following abilities to make an attack with a Maul.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1. Pushing Attack.",
+									"style": "italic",
+									"entry": "If the target is a Large or smaller creature, it must succeed on a {@dc 24} Dexterity or Strength saving throw or be thrown up to 20 feet away, If a thrown target strikes a solid surface, the target takes ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown and becomes {@condition prone}"
+								},
+								{
+									"type": "item",
+									"name": "1. Smash Attack.",
+									"style": "italic",
+									"entry": "if the target is a Large or smaller creature, it must succeed on a {@dc 24} Dexterity or Strength saving throw or be crushed, the crushed target takes 11 ({@damage 3d6})  bludgeoning damage and becomes {@condition prone}."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "The Surtur Champion (Recharges after Long Rest)",
+					"entries": [
+						"If the Duke is restricted to 0 life points, he undergoes a transformation, restoring part of his resources and assuming the form of the Champion of Surtur. Additionally, the sport can use the options in the “Mythical Actions” and “Lair Actions” section for 1 hour."
+					]
+				},
+				{
+					"name": "Fire Giant feats",
+					"entries": [
+						"Some adult fire giants are trained to lay siege to strongholds and break through enemy lines. These abilities are represented by the following traits.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1. Siege monster",
+									"style": "italic",
+									"entry": "The giant deals double damage to objects and structures."
+								},
+								{
+									"type": "item",
+									"name": "2. Tackle",
+									"style": "italic",
+									"entry": "When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movimento de Criatura Colossal (GMA)",
+					"entries": [
+						"Um vez no ínicio ou no final do turno, se o gigante não tiver utilizado seu movimento, ele pode optar por usar uma das habilidades listadas a seguir, entretanto, neste turno o gigante não pode utilizar a ação de correr (Dash), antes de cada descrição de habilidade está a informação da quantidade de deslocamento que o gigante utiliza para fazer aquela ação.",
+						"GMA: {@dc 16}",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1. Squash|Esmagar",
+									"style": "italic",
+									"entry": "(TODO O DESLOCAMENTO) O gigante se arremessa corporalmente em inimigos menores até 10-foot-radius, e os esmaga com seu peso, para isso o gigante faz uso de todo seu deslocamento. Uma criatura grande ou até 4 médias ou menores a até 5 feets uma da outra deve fazer um teste de resistência de destreza, se falhar o alvo recebe 28 ({@damage 6d6+8}) de dano de bludgeoning. Além disso, o gigante fica {@condition prone} no espaço do alvo, e o alvo está {@condition restrained} e {@condition grapple}, no início do turno o alvo deve realizar um teste de resistência de força encerrando o efeito em sucesso. Essas condições terminam cedo se o gigante se levantar."
+								},
+								{
+									"type": "item",
+									"name": "2.Trample|Atropelar",
+									"style": "italic",
+									"entry": "(NÃO CONSOME DESL.) O gigante pode se mover normalmente por espaços ocupados por criaturas menores. Para fazer isso, o gigante deve fazer um teste de força (atletismo) resistida contra os alvos menores que estiverem no percurso. Se ele falhar, o movimento do gigante para naquele espaço e ele perde o resto do seu deslocamento. Se o gigante estiver duas ou mais categorias de tamanho acima, ele é automaticamente bem-sucedido. O gigante causa 10 ({@damage 1d8+8}) de dano de concussão em cada criatura que falhar no teste resistido."
+								},
+								{
+									"type": "item",
+									"name": "3.Crush|Pisotear",
+									"style": "italic",
+									"entry": "(METADE DO DESLOCAMENTO) O gigante força um de seus pés sobre a cabeça de um alvo. A criatura deve ser bem sucedida em um teste de resistência de Força. Em uma falha na resistência, a criatura está {@condition prone} e {@condition restrained}. No início de seu próximo turno, a criatura pode fazer um teste de força (atletismo) ou destreza (acrobacia) para escapar. Se obtiver sucesso, a criatura vai para um espaço adjacente não ocupado e pode agir normalmente. Se o gigante se afastar da criatura, ela não está mais {@condition restrained}."
+								},
+								{
+									"type": "item",
+									"name": "4. Jump|Salto",
+									"style": "italic",
+									"entry": "(NÃO CONSOME DESL.) O gigante salta sobre uma superfície, gerando um tremor e potencialmente desequilibrando as criaturas que estiverem sobre a superfície que o gigante aterrissar, para isso o gigante faz uso de todo seu deslocamento, podendo ainda assim aterrissar em algum ponto a 20 feets de onde estava. As criaturas que estiverem a 10 feets do gigante ou sobre ele devem ser bem sucedidas em um teste de resistência de destreza, em uma falha a criatura está {@condition prone}. Adicionalmente, se houver alguma criatura no espaço do gigante enquanto ele realiza esta ação, o teste de resistência deve ser feito com desvantagem, em uma falha o alvo sofre 20 ({@damage 3d8+8}) de dano de concussão, em sucesso o alvo recebe apenas metade do dano."
+								}
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes three Maul attacks, or one Maul and Ground Pound attack if it is recharged."
+					]
+				},
+				{
+					"name": "Hellish prison",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h}20 ({@damage 6d6 + 8}) bludgeoning damage, plus 4 ({@damage 2d8}) fire damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 16} to hit, range 60/240 ft., one target. {@h}28 ({@damage 4d10 + 8}) bludgeoning damage. If the target is a creature smaller than the giant, it must succeed on a {@dc 24} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Fragmented Rock",
+					"entries": [
+						"The giant shatters a huge boulder and hurls it in an area. Each creature in a 15-foot-radius sphere centered on that point must make a {@dc 24} Dexterity saving throw. A target takes 20 ({@damage 3d8+8}) bludgeoning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"The giant tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a {@dc 24} Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land {@condition prone}, taking 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown."
+					]
+				},
+				{
+					"name": "Ground Pound (@recharge 6)",
+					"entries": [
+						"The giant slams its maul on the ground, triggering an earth tremor and violently pelting the area with debris. Each creature on the ground originating from the giant in a 15-foot cube must succeed on a {@dc 24} Strength saving throw. On a failed save, a creature takes 28 ({@damage 6d6 + 8}) bludgeoning damage and is knocked {@condition prone}. If a creature fails its save by 5 or more, it is also {@condition stunned} until the end of its next turn. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Conquering Presence (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The giant forces each creature of its choice that it can see within 30 feet of it to make a {@dc 20} Wisdom saving throw. On a failed save, a creature becomes {@condition frightened} of the giant for 1 minute. The {@condition frightened} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The giant casts one of the following spells using Charisma as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks):"
+					],
+					"daily": {
+						"2e": [
+							"{@spell banishment}",
+							"{@spell bestow curse}",
+							"{@spell blinding smite}",
+							"{@spell command}",
+							"{@spell compelled duel}",
+							"{@spell destructive wave}",
+							"{@spell dispel magic}",
+							"{@spell fear}",
+							"{@spell hold person}",
+							"{@spell wrathful smite}"
+						],
+						"1e": [
+							"{@spell disintegrate}",
+							"{@spell power word pain|XGE}",
+							"{@spell wildfire|VSS}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			],
+			"shortName": "giant",
+			"legendary": [
+				{
+					"name": "Burning Glare of Surtur",
+					"entries": [
+						"The duke turns its gaze toward one creature it can see within 60 feet of it and commands it to combust. The target must succeed on a {@dc 20} Wisdom saving throw. On a failed save, the target takes 13 ({@damage 3d8}) fire damage and is {@condition frightened} until the end of its next turn. On a successful save, the target takes half as much damage and isn't {@condition frightened}."
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"The giant casts a spell of up to 4th cycle."
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"The duke targets one ally it can see within 30 feet of it. if the target can see and hear the duke, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The giant moves up to half its speed."
+					]
+				},
+				{
+					"name": "Hellish prison (Costs 2 Actions)",
+					"entries": [
+						"The giant makes a Maul attack."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE",
+				"MLW"
+			],
+			"tokenUrl": "https://i.imgur.com/w2CYYIa.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/SKT/084-skt08-03.webp"
+						}
+					}
+				]
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"bonus": [
+				{
+					"name": "Fire fissure",
+					"entries": [
+						"The Duke teleports, along with any equipment you are wearing or carrying, up to 30 feet to an unoccupied space he can see."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Counter attack (3/Day)",
+					"entries": [
+						"When a creature makes Zalto with a melee attack, it can use an instance to make a melee weapon attack against a creature."
+					]
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		}
+	]
+}
